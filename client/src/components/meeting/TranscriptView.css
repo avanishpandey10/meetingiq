@@ -1,0 +1,222 @@
+.transcript-view {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transcript-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  gap: 12px;
+  color: #6b7280;
+}
+
+.transcript-no-data p {
+  margin: 0;
+}
+
+/* Toolbar */
+.transcript-toolbar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.transcript-search-box {
+  flex: 2;
+  position: relative;
+  min-width: 200px;
+}
+
+.transcript-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.transcript-search-box input {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.transcript-search-box input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.transcript-clear-search {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.transcript-clear-search:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.transcript-speaker-filter {
+  flex: 1;
+  position: relative;
+  min-width: 150px;
+}
+
+.transcript-filter-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.transcript-speaker-filter select {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s;
+}
+
+.transcript-speaker-filter select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Results Count */
+.transcript-results-count {
+  margin-bottom: 16px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.transcript-results-count strong {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+/* Segments */
+.transcript-segments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transcript-no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 8px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.transcript-no-results p {
+  margin: 0;
+}
+
+.transcript-segment {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.transcript-segment:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-color: #e5e7eb;
+}
+
+.transcript-segment-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.transcript-segment-timestamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: #4f46e5;
+  font-size: 13px;
+}
+
+.transcript-segment-speaker {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 13px;
+}
+
+.transcript-jump-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.transcript-jump-button:hover {
+  background: #f3f4f6;
+  color: #4f46e5;
+}
+
+.transcript-segment-text {
+  margin: 0;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .transcript-toolbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .transcript-search-box,
+  .transcript-speaker-filter {
+    width: 100%;
+  }
+}

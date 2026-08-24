@@ -1,0 +1,149 @@
+.timeline-view {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  gap: 12px;
+  color: #6b7280;
+}
+
+.timeline-empty p {
+  margin: 0;
+}
+
+.timeline-header {
+  margin-bottom: 24px;
+}
+
+.timeline-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.timeline-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-event {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.event-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.event-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.event-line {
+  flex: 1;
+  width: 2px;
+  background: #e5e7eb;
+  margin: 4px 0;
+  min-height: 20px;
+}
+
+.timeline-event-decision {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.timeline-event-action {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.timeline-event-risk {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.timeline-event-question {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.timeline-event-default {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.event-content {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+
+.event-content:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.event-timestamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: #4f46e5;
+  font-size: 13px;
+}
+
+.event-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.event-description {
+  margin: 0;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+}

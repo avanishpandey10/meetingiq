@@ -1,0 +1,272 @@
+.analysis-view {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.analysis-view-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  gap: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.analysis-view-empty p {
+  margin: 0;
+}
+
+/* Executive Summary */
+.analysis-summary-card {
+  margin-bottom: 24px;
+}
+
+.analysis-summary-text {
+  margin: 0;
+  color: #374151;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Decisions */
+.analysis-decisions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.analysis-decision-item {
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border-left: 4px solid #10b981;
+  transition: all 0.2s;
+}
+
+.analysis-decision-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.analysis-decision-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.analysis-decision-text {
+  margin: 0;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 15px;
+  flex: 1;
+}
+
+.analysis-confidence {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #10b981;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.analysis-decision-context {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.analysis-decision-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.analysis-decision-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Topics */
+.analysis-topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.analysis-topic-item {
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.analysis-topic-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.analysis-topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.analysis-topic-header h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+.analysis-topic-header span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.analysis-topic-duration {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.analysis-topic-summary {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Score */
+.analysis-score-overview {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.analysis-score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(79, 70, 229, 0.2);
+}
+
+.analysis-score-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4f46e5;
+  line-height: 1;
+}
+
+.analysis-score-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.analysis-score-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.analysis-score-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.analysis-score-item span {
+  min-width: 130px;
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.analysis-score-bar {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.analysis-score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.analysis-score-item strong {
+  min-width: 30px;
+  text-align: right;
+  font-weight: 700;
+  color: #4f46e5;
+  font-size: 13px;
+}
+
+/* Score Reasons */
+.analysis-score-reasons {
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 8px;
+}
+
+.analysis-score-reasons h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.analysis-score-reasons ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.analysis-score-reasons li {
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .analysis-score-overview {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .analysis-score-details {
+    width: 100%;
+  }
+}
