@@ -81,26 +81,6 @@ Meetings generate enormous amounts of valuable information — most of which dis
 - 📈 Analytics dashboard with charts (Recharts)
 - 📤 Export reports (**JSON, Text, HTML**)
 - 🎭 Demo mode with mock data (no API key required)
-- 🧪 Built-in evaluation framework with quality metrics
-
----
-
-## 📸 Screenshots
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x400/4f46e5/ffffff?text=MeetingIQ+Dashboard)
-
-### Upload Meeting
-![Upload](https://via.placeholder.com/800x400/7c3aed/ffffff?text=Upload+Meeting)
-
-### Meeting Analysis
-![Analysis](https://via.placeholder.com/800x400/10b981/ffffff?text=Meeting+Analysis)
-
-### Action Tracker
-![Action Tracker](https://via.placeholder.com/800x400/f59e0b/ffffff?text=Action+Tracker)
-
-### Evaluation Dashboard
-![Evaluation](https://via.placeholder.com/800x400/ef4444/ffffff?text=Evaluation+Dashboard)
 
 ---
 
