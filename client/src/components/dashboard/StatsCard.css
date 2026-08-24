@@ -1,0 +1,133 @@
+.stats-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 120px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.stats-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Content */
+.stats-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.stats-value {
+  margin-bottom: 4px;
+  color: #111827;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.stats-label {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Trend */
+.stats-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stats-trend svg {
+  width: 14px;
+  height: 14px;
+}
+
+.trend-up {
+  color: #10b981;
+}
+
+.trend-down {
+  color: #ef4444;
+}
+
+.trend-neutral {
+  color: #6b7280;
+}
+
+/* Color Variants */
+.stats-primary .stats-icon {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.stats-secondary .stats-icon {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.stats-success .stats-icon {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.stats-warning .stats-icon {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.stats-danger .stats-icon {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-card {
+    min-height: 105px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .stats-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .stats-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .stats-value {
+    font-size: 24px;
+  }
+}
