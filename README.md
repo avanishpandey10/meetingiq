@@ -81,8 +81,24 @@ Meetings generate enormous amounts of valuable information — most of which dis
 - 📈 Analytics dashboard with charts (Recharts)
 - 📤 Export reports (**JSON, Text, HTML**)
 - 🎭 Demo mode with mock data (no API key required)
+- 🧪 Built-in evaluation framework with quality metrics
 
----
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Upload Meeting
+![Upload Meeting](./screenshots/upload.png)
+
+### Meeting Analysis
+![Meeting Analysis](./screenshots/meeting_history.png)
+
+### Action Tracker
+![Action Tracker](./screenshots/action_tracker.png)
+
+### Evaluation Dashboard
+![Evaluation Dashboard](./screenshots/evaluation.png)
 
 ## 🏗️ Architecture
 
