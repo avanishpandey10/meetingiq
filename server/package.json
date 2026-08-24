@@ -1,12 +1,16 @@
 {
   "name": "meetingiq-server",
   "version": "1.0.0",
-  "description": "MeetingIQ Backend Server",
+  "description": "MeetingIQ Backend Server - AI Meeting Intelligence & Action Tracker",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "evaluate": "node evaluation/evaluate.js",
+    "test:sample": "node evaluation/test-sample.js",
+    "generate:report": "node evaluation/generate-report.js",
+    "test": "npm run test:sample"
   },
   "dependencies": {
     "axios": "^1.6.2",

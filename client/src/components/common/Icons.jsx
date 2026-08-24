@@ -29,7 +29,13 @@ const IconWrapper = ({ children, size = 20, color = 'currentColor', className = 
 // ============================================
 // NAVIGATION ICONS
 // ============================================
-
+export const BrainIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4v-2a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4V6a4 4 0 0 0-4-4z" />
+    <path d="M8 12h8" />
+    <path d="M12 8v8" />
+  </IconWrapper>
+);
 export const DashboardIcon = (props) => (
   <IconWrapper {...props}>
     <rect x="3" y="3" width="7" height="9" />

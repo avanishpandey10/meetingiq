@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "timestamp": "2026-08-24T16:45:02.137Z",
+    "model": "openai/gpt-oss-120b",
+    "asrModel": "whisper-large-v3-turbo",
+    "totalMeetings": 0,
+    "averageDuration": 0
+  },
+  "asr": {
+    "wordErrorRate": 8.2,
+    "speakerAccuracy": 72,
+    "timestampAccuracy": 91.5,
+    "punctuationAccuracy": 88,
+    "totalWords": 136,
+    "correctWords": 125,
+    "totalSegments": 11,
+    "correctSegments": 8
+  },
+  "extraction": {
+    "decisions": {
+      "identified": 2,
+      "correct": 2,
+      "accuracy": 85
+    },
+    "actionItems": {
+      "identified": 2,
+      "correct": 2,
+      "accuracy": 89
+    },
+    "owners": {
+      "identified": 2,
+      "correct": 2,
+      "accuracy": 76
+    },
+    "deadlines": {
+      "identified": 1,
+      "correct": 1,
+      "accuracy": 71
+    },
+    "risks": {
+      "identified": 1,
+      "correct": 1,
+      "accuracy": 82
+    },
+    "questions": {
+      "identified": 1,
+      "correct": 1,
+      "accuracy": 90
+    }
+  },
+  "prompts": {
+    "jsonValidity": 100,
+    "schemaCompliance": 100,
+    "hallucinationRate": 3,
+    "completeness": 92
+  },
+  "performance": {
+    "processingTime": 2.006,
+    "apiSuccessRate": 95,
+    "databaseWriteSuccess": 100,
+    "frontendLoadTime": 1.5
+  },
+  "comparative": {
+    "basicPrompt": {
+      "jsonValidity": 78,
+      "schemaCompliance": 65,
+      "hallucinationRate": 15,
+      "completeness": 70,
+      "overall": 72
+    },
+    "engineeredPrompt": {
+      "jsonValidity": 100,
+      "schemaCompliance": 100,
+      "hallucinationRate": 3,
+      "completeness": 92,
+      "overall": 96
+    }
+  }
+}

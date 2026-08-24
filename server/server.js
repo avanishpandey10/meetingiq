@@ -3,6 +3,7 @@ import cors from 'cors';
 
 import { connectDatabase } from './config/database.js';
 import { env } from './config/env.js';
+import evaluationRoutes from './routes/evaluationRoutes.js';
 
 import meetingRoutes from './routes/meetingRoutes.js';
 import actionItemRoutes from './routes/actionItemRoutes.js';
@@ -55,6 +56,7 @@ app.use(
 // ============================================================
 // REQUEST LOGGING
 // ============================================================
+app.use('/api/evaluation', evaluationRoutes);
 
 app.use(
   (req, res, next) => {

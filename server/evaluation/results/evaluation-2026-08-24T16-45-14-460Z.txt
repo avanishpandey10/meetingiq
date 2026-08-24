@@ -1,0 +1,49 @@
+
+========================================
+MeetingIQ Evaluation Report
+========================================
+Generated: 2026-08-24T16:45:02.137Z
+Model: openai/gpt-oss-120b
+ASR Model: whisper-large-v3-turbo
+========================================
+
+🎙️ ASR ACCURACY
+-----------------
+Word Error Rate: 8.2%
+Speaker Accuracy: 72%
+Timestamp Accuracy: 91.5%
+Punctuation Accuracy: 88%
+
+🧠 INTELLIGENCE EXTRACTION
+--------------------------
+Decisions: 85% accuracy
+Action Items: 89% accuracy
+Owner Attribution: 76% accuracy
+Deadline Extraction: 71% accuracy
+Risk Identification: 82% accuracy
+Question Tracking: 90% accuracy
+
+📝 PROMPT ENGINEERING
+---------------------
+JSON Validity: 100%
+Schema Compliance: 100%
+Hallucination Rate: 3%
+Completeness: 92%
+
+📊 COMPARATIVE ANALYSIS
+------------------------
+Basic Prompt: 72%
+Engineered Prompt: 96%
+Improvement: +24%
+
+⚡ PERFORMANCE
+---------------
+Processing Time: 2.006s
+API Success Rate: 95%
+Database Write: 100%
+Frontend Load: 1.5s
+
+========================================
+Overall Score: 9.2/10
+Grade: A
+========================================
