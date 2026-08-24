@@ -1,0 +1,82 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.badge-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-content svg {
+  flex-shrink: 0;
+}
+
+/* Sizes */
+.badge-small {
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.badge-medium {
+  padding: 4px 12px;
+  font-size: 11px;
+  border-radius: 6px;
+}
+
+.badge-large {
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+/* Variants */
+.badge-default {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.badge-success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-warning {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.badge-danger {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.badge-info {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #93c5fd;
+}
+
+.badge-primary {
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+/* Hover effects */
+.badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
